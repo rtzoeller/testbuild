@@ -3,6 +3,7 @@ BUILT_DIR = 'Built'
 ARCHIVE_DIR = '..\\testbuild'
 
 def build(lvVersion){
+  bat "mkdir $BUILT_DIR"
   bat "copy /Y \"$WORKSPACE\\Jenkinsfile\" \"$BUILT_DIR\\Jenkinsfile\""
 }
 
