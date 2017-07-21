@@ -3,7 +3,7 @@ BUILT_DIR = 'Built'
 ARCHIVE_DIR = '..\\testbuild'
 
 def build(lvVersion){
-  bat "copy /Y \"$WORKSPACE\\Jenkinsfile" \"$BUILT_DIR\\Jenkinsfile\""
+  bat "copy /Y \"$WORKSPACE\\Jenkinsfile\" \"$BUILT_DIR\\Jenkinsfile\""
 }
 
 //This function should be a no-op until we can use a toolchain version of LV
