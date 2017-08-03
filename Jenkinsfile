@@ -4,7 +4,7 @@
 String nodeLabel = 'dcaf'
 List<String> lvVersions = ["2016"]
 String sourceVersion = '2016'
-def buildType = BuildType.NiBuild
+def buildType = BuildType.Pipeline
 
 def buildInfo = new BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 buildPipeline(buildInfo)
