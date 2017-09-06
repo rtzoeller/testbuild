@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 //Leave the above line alone.  It identifies this as a groovy script.
-@Library('nicommonbuild') _
+@Library('nivscommonbuild') _
 
 String nodeLabel = 'dcaf'
 List<String> lvVersions = ["2016"]
