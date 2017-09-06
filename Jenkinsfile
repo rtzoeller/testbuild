@@ -9,7 +9,7 @@ def buildType = BuildType.Groovy
 
 def buildInfo = new BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 buildPipeline(buildInfo)
-//def tester = new org.vscommonbuild.TestClass(this, 'test name')
-//tester.execute()
+def tester = new ni.vsbuild.TestClass(this, 'test name')
+tester.execute()
 
 //buildPipeline(getCommonBuildInformation())
