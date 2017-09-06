@@ -8,8 +8,10 @@ String sourceVersion = '2016'
 def buildType = BuildType.Groovy
 
 def buildInfo = new BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
-buildPipeline(buildInfo)
-def tester = new ni.vsbuild.TestClass(this, 'test name')
-tester.execute()
+//buildPipeline(buildInfo)
+//def tester = new ni.vsbuild.TestClass(this, 'test name')
+//tester.execute()
+
+ni.vsbuild.nipm.Pipeline.builder(this, buildInfo).buildGroovyPipeline().execute()
 
 //buildPipeline(getCommonBuildInformation())
