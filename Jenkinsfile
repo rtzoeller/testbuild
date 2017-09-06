@@ -7,6 +7,7 @@ String sourceVersion = '2016'
 def buildType = BuildType.Groovy
 
 def buildInfo = new BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
-buildPipeline(buildInfo)
+//buildPipeline(buildInfo)
+testPipeline()
 
 //buildPipeline(getCommonBuildInformation())
