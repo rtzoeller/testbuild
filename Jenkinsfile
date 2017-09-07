@@ -13,9 +13,9 @@ buildInfo.printInformation(this)
 //def tester = new ni.vsbuild.TestClass(this, 'test name')
 //tester.execute()
 
-def executor = new ni.vsbuild.BuildExecutor(this, buildInfo)
-executor.execute()
+//def executor = new ni.vsbuild.BuildExecutor(this, buildInfo)
+//executor.execute()
 
-//ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
+ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
 
 //buildPipeline(getCommonBuildInformation())
