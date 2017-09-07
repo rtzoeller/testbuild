@@ -7,12 +7,14 @@ List<String> lvVersions = ["2016"]
 String sourceVersion = '2016'
 def buildType = ni.vsbuild.BuildType.Groovy
 
-def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
+echo $buildType
+
+//def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 //buildPipeline(buildInfo)
 //def tester = new ni.vsbuild.TestClass(this, 'test name')
 //tester.execute()
 
-ni.vsbuild.BuildExecutor(this, buildInfo).execute()
+//ni.vsbuild.BuildExecutor(this, buildInfo).execute()
 
 //ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
 
