@@ -9,7 +9,7 @@ def buildType = ni.vsbuild.BuildType.Groovy
 
 echo "$buildType"
 
-//def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
+def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 //buildPipeline(buildInfo)
 //def tester = new ni.vsbuild.TestClass(this, 'test name')
 //tester.execute()
