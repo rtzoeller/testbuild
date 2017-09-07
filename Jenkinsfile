@@ -12,6 +12,8 @@ def buildInfo = new BuildInformation(nodeLabel, sourceVersion, lvVersions, build
 //def tester = new ni.vsbuild.TestClass(this, 'test name')
 //tester.execute()
 
-ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
+ni.vsbuild.BuildExecutor(this, buildInfo).execute()
+
+//ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
 
 //buildPipeline(getCommonBuildInformation())
