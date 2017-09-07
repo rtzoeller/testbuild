@@ -7,7 +7,7 @@ List<String> lvVersions = ["2016"]
 String sourceVersion = '2016'
 def buildType = ni.vsbuild.BuildType.Groovy
 
-echo $buildType
+echo "$buildType"
 
 //def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 //buildPipeline(buildInfo)
