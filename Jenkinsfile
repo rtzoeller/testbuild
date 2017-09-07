@@ -7,7 +7,7 @@ List<String> lvVersions = ["2016"]
 String sourceVersion = '2016'
 def buildType = BuildType.Groovy
 
-def buildInfo = new BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
+def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 //buildPipeline(buildInfo)
 //def tester = new ni.vsbuild.TestClass(this, 'test name')
 //tester.execute()
