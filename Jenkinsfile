@@ -16,6 +16,6 @@ buildInfo.printInformation(this)
 def executor = new ni.vsbuild.BuildExecutor(this, buildInfo)
 executor.execute()
 
-ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
+//ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
 
 //buildPipeline(getCommonBuildInformation())
