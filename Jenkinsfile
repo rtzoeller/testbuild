@@ -5,7 +5,7 @@
 String nodeLabel = 'dcaf'
 List<String> lvVersions = ["2016"]
 String sourceVersion = '2016'
-def buildType = BuildType.Groovy
+def buildType = ni.vsbuild.BuildType.Groovy
 
 def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
 //buildPipeline(buildInfo)
