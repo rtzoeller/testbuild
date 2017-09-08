@@ -9,7 +9,7 @@ def buildType = ni.vsbuild.BuildType.Groovy
 def packageType = ni.vsbuild.PackageType.NIPM
 def officialSupport = true
 
-def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, buildType)
+def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, packageType, officialSupport)
 //buildPipeline(buildInfo)
 //def tester = new ni.vsbuild.TestClass(this, 'test name')
 //tester.execute()
