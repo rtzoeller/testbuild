@@ -10,14 +10,5 @@ def packageType = ni.vsbuild.PackageType.NIPM
 def officialSupport = false
 
 def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, packageType, officialSupport)
-//buildPipeline(buildInfo)
-//def tester = new ni.vsbuild.TestClass(this, 'test name')
-//tester.execute()
 
 ni.vsbuild.PipelineExecutor.execute(this, buildInfo)
-//def executor = new ni.vsbuild.Executor(this, buildInfo)
-//executor.execute()
-
-//ni.vsbuild.nipm.Pipeline.builder(this).buildFullPipeline().execute()
-
-//buildPipeline(getCommonBuildInformation())
