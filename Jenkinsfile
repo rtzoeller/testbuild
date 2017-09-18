@@ -5,7 +5,7 @@
 String nodeLabel = 'dcaf'
 List<String> lvVersions = ["2016"]
 String sourceVersion = '2016'
-def buildType = ni.vsbuild.BuildType.Groovy
+def buildType = ni.vsbuild.BuildType.GROOVY
 def packageType = ni.vsbuild.PackageType.NIPM
 def officialSupport = false
 
