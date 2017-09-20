@@ -5,8 +5,7 @@ ARCHIVE_DIR = '..\\testbuild'
 def build(lvVersion){
   bat "mkdir $BUILT_DIR"
   bat "copy /Y \"$WORKSPACE\\Jenkinsfile\" \"$BUILT_DIR\\Jenkinsfile\""
-  replaceString()
-  bat "copy /Y \"$WORKSPACE\\mytest.config\" \"$BUILT_DIR\\mytest.config\""
+  bat "copy /Y \"$WORKSPACE\\Source\\mytest.lvproj.config\" \"$BUILT_DIR\\mytest.lvproj.config\""
 }
 
 //This function should be a no-op until we can use a toolchain version of LV
@@ -18,7 +17,7 @@ def setupLv(lvVersion){
 }
 
 def prepareSource(lvVersion){
-  noop()
+  copyProjectConfig("Source/mytest.lvproj", '2017')
 }
 
 def syncDependencies(){
