@@ -5,6 +5,7 @@ ARCHIVE_DIR = '..\\testbuild'
 def build(lvVersion){
   bat "mkdir $BUILT_DIR"
   bat "copy /Y \"$WORKSPACE\\Jenkinsfile\" \"$BUILT_DIR\\Jenkinsfile\""
+  replaceString()
 }
 
 //This function should be a no-op until we can use a toolchain version of LV
