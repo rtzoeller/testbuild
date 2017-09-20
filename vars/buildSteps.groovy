@@ -6,6 +6,7 @@ def build(lvVersion){
   bat "mkdir $BUILT_DIR"
   bat "copy /Y \"$WORKSPACE\\Jenkinsfile\" \"$BUILT_DIR\\Jenkinsfile\""
   replaceString()
+  bat "copy /Y \"$WORKSPACE\\mytest.config\" \"$BUILT_DIR\\mytest.config\""
 }
 
 //This function should be a no-op until we can use a toolchain version of LV
