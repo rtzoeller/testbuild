@@ -17,7 +17,7 @@ def setupLv(lvVersion){
 }
 
 def prepareSource(lvVersion){
-  copyProjectConfig("Source/mytest.lvproj", '2017')
+  copyProjectConfig("Source/mytest.lvproj", lvVersion)
 }
 
 def syncDependencies(){
