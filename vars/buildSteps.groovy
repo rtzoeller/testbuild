@@ -1,6 +1,6 @@
 // Required constants
 BUILT_DIR = 'Built'
-ARCHIVE_DIR = '..\\testbuild'
+ARCHIVE_DIR = '\\\\nirvana\\temp\\dbuck'
 
 def build(lvVersion){
   bat "mkdir $BUILT_DIR"
