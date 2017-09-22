@@ -3,7 +3,7 @@
 @Library('vs-common-build') _
 
 String nodeLabel = 'dcaf'
-List<String> lvVersions = ["2016"]
+List<String> lvVersions = ["2016", "2017"]
 String sourceVersion = '2016'
 def buildType = ni.vsbuild.BuildType.GROOVY
 def packageType = ni.vsbuild.PackageType.NIPM
