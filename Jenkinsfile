@@ -4,4 +4,4 @@
 
 List<String> lvVersions = ["2016", "2017"]
 
-ni.vsbuild.PipelineExecutor.execute(this, nibuildFlow(lvVersions))
+ni.vsbuild.PipelineExecutor.execute(this, groovyFlow(lvVersions))
