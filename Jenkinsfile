@@ -11,4 +11,4 @@ def officialSupport = true
 
 def buildInfo = new ni.vsbuild.BuildInformation(nodeLabel, sourceVersion, lvVersions, packageType, officialSupport)
 
-ni.vsbuild.PipelineFactory.buildPipeline(this, buildInfo).execute()
+ni.vsbuild.PipelineExecutor.execute(this, buildInfo)
