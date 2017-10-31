@@ -4,7 +4,7 @@
 
 List<String> lvVersions = ['2016']
 
-node('dcafbuild01){
+node('dcafbuild01'){
    stage('checkout') {
       deleteDir()
       echo 'Attempting to get source from repo.'
