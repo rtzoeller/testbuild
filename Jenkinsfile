@@ -12,7 +12,8 @@ node('dcafbuild01'){
          checkout(scm)
       }
    }
-
-   def configuration = ni.vsbuild.v2.BuildConfiguration.load(this, 'output.txt')
-   configuration.printInformation(this)
+   stage('read config') {
+      def configuration = ni.vsbuild.v2.BuildConfiguration.load(this, 'output.txt')
+      configuration.printInformation(this)
+   }
 }
