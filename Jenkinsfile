@@ -9,7 +9,7 @@ node('dcafbuild01'){
       deleteDir()
       echo 'Attempting to get source from repo.'
       timeout(time: 5, unit: 'MINUTES'){
-         checkout(script.scm)
+         checkout(scm)
       }
    }
 
