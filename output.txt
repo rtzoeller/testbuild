@@ -1,0 +1,38 @@
+{
+   "constants": {
+      "BUILT_DIR": "Built",
+      "ARCHIVE_DIR": "..\\EngineSimulationToolkit_CustomDevice"
+   },
+   "projects": {
+      "cd": {
+         "path": "Source\\Engine Simulation Toolkit Custom Device.lvproj"
+      },
+      "file_format": {
+         "path": "Source\\File Format Classes\\FileFormat.lvproj"
+      }
+   },
+   "build": {
+      "steps": [
+         {
+            "name": "File Format Library",
+            "type": "lvBuildSpec",
+            "project": "{projects.file_format}",
+            "target": "My Computer",
+            "build_spec": "File Formats"
+         },
+         {
+            "name": "Configuration Library",
+            "type": "lvBuildSpec",
+            "project": "{projects.cd}",
+            "target": "My Computer",
+            "build_spec": "Configuration Release"
+         },
+         {
+            "name": "Engine Libraries",
+            "type": "lvBuildSpecAllTargets",
+            "project": "{projects.cd}",
+            "build_spec": "Engine Release"
+         }
+      ]
+   }
+}

@@ -2,6 +2,7 @@
 //Leave the above line alone.  It identifies this as a groovy script.
 @Library('vs-common-build') _
 
-List<String> lvVersions = ['2016', '2017']
+List<String> lvVersions = ['2016']
 
-ni.vsbuild.PipelineExecutor.execute(this, groovyFlow(lvVersions))
+def configuration = ni.vsbuild.v2.BuildConfiguration.load(this, 'output.txt')
+configuration.printInformation(this)
