@@ -1,5 +1,5 @@
 {
-   "constants": {
+   "paths": {
       "BUILT_DIR": "Built",
       "ARCHIVE_DIR": "..\\EngineSimulationToolkit_CustomDevice"
    },

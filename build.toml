@@ -1,4 +1,4 @@
-[constants]
+[paths]
 BUILT_DIR = 'Built'
 ARCHIVE_DIR = '\\nirvana\temp\dbuck\testbuild'
 
