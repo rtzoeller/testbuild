@@ -1,0 +1,13 @@
+[constants]
+BUILT_DIR = 'Built'
+ARCHIVE_DIR = '\\nirvana\temp\dbuck\testbuild'
+
+[projects.mytest]
+path = 'Source\mytest.lvproj'
+
+[[mkdirectories]]
+path = 'Built'
+
+[exports]
+Jenkinsfile = 'Built\Jenkinsfile'
+configfile = 'Built\mytest.lvproj.config'
