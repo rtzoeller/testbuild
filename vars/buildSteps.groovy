@@ -2,10 +2,13 @@
 BUILT_DIR = 'Built'
 ARCHIVE_DIR = '\\\\nirvana\\temp\\dbuck\\testbuild'
 
+PROJECT_PATH = 'src\\lvBuildSpec.lvproj'
+MY_COMPUTER_TARGET = 'My Computer'
+BUILD_SPEC = 'SourceDist'
+
 def build(lvVersion){
-  bat "mkdir $BUILT_DIR"
-  bat "copy /Y \"$WORKSPACE\\Jenkinsfile\" \"$BUILT_DIR\\Jenkinsfile\""
-  bat "copy /Y \"$WORKSPACE\\Source\\mytest.lvproj.config\" \"$BUILT_DIR\\mytest.lvproj.config\""
+  echo 'Building the test library...'
+  lvBuildSpec(PROJECT_PATH, MY_COMPUTER_TARGET, BUILD_SPEC, lvVersion)
 }
 
 //This function should be a no-op until we can use a toolchain version of LV
@@ -17,7 +20,7 @@ def setupLv(lvVersion){
 }
 
 def prepareSource(lvVersion){
-  copyProjectConfig("Source/mytest.lvproj", lvVersion)
+  copyProjectConfig(PROJECT_PATH, lvVersion)
 }
 
 def syncDependencies(){
