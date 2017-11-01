@@ -15,7 +15,7 @@ configfile = 'Built\mytest.lvproj.config'
 [[build.steps]]
 name = 'Test Build Spec'
 type = 'lvBuildSpec'
-project = '{projects.lvBuildSpec}'
+project = '{lvBuildSpec}'
 target = 'My Computer'
 build_spec = 'SourceDist'
 
