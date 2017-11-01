@@ -2,8 +2,8 @@
 BUILT_DIR = 'Built'
 ARCHIVE_DIR = '\\nirvana\temp\dbuck\testbuild'
 
-[projects.mytest]
-path = 'Source\mytest.lvproj'
+[projects.lvBuildSpec]
+path = 'src\lvBuildSpec.lvproj'
 
 [[mkdirectories]]
 path = 'Built'
@@ -11,3 +11,13 @@ path = 'Built'
 [exports]
 Jenkinsfile = 'Built\Jenkinsfile'
 configfile = 'Built\mytest.lvproj.config'
+
+[[build.steps]]
+name = 'Test Build Spec'
+type = 'lvBuildSpec'
+project = '{projects.lvBuildSpec}'
+target = 'My Computer'
+build_spec = 'SourceDist'
+
+[package]
+type = 'nipm'
