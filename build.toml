@@ -43,5 +43,10 @@ name = 'Test Build All'
 type = 'lvBuildAll'
 project = '{lvBuildAll}'
 
+[[build.steps]]
+name = 'Run VI Test'
+type = 'lvRunVi'
+vi = 'src\helloworld.vi'
+
 [package]
 type = 'nipm'
