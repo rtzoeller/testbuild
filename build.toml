@@ -1,6 +1,6 @@
-[paths]
-BUILT_DIR = 'Built'
-ARCHIVE_DIR = '\\nirvana\temp\dbuck\testbuild'
+[archive]
+build_output_dir = 'Built'
+archive_location = '\\nirvana\temp\dbuck\testbuild'
 
 [projects.lvBuildSpec]
 path = 'src\lvBuildSpec.lvproj'
