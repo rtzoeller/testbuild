@@ -4,4 +4,4 @@
 
 List<String> lvVersions = ['2016']
 
-ni.vsbuild.v2.PipelineExecutor.execute(this)
+ni.vsbuild.v2.PipelineExecutor.execute(this, lvVersions)
