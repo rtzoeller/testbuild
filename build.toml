@@ -11,13 +11,6 @@ path = 'src\lvBuildSpecAllTargets.lvproj'
 [projects.lvBuildAll]
 path = 'src\lvBuildAll.lvproj'
 
-[[mkdirectories]]
-path = 'Built'
-
-[exports]
-Jenkinsfile = 'Built\Jenkinsfile'
-configfile = 'Built\mytest.lvproj.config'
-
 [[codegen.steps]]
 name = 'Run VI Codegen Test'
 type = 'lvRunVi'
