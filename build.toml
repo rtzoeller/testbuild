@@ -8,6 +8,9 @@ path = 'src\lvBuildSpec.lvproj'
 [projects.lvBuildSpecAllTargets]
 path = 'src\lvBuildSpecAllTargets.lvproj'
 
+[projects.lvBuildAll]
+path = 'src\lvBuildAll.lvproj'
+
 [[mkdirectories]]
 path = 'Built'
 
@@ -34,6 +37,11 @@ type = 'lvBuildSpec'
 project = 'src\lvBuildSpec.lvproj'
 target = 'My Computer'
 build_spec = 'Executable'
+
+[[build.steps]]
+name = 'Test Build All'
+type = 'lvBuildAll'
+project = '{lvBuildAll}'
 
 [package]
 type = 'nipm'
