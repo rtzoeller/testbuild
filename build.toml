@@ -26,17 +26,17 @@ target = 'My Computer'
 build_spec = 'SourceDist'
 
 [[build.steps]]
-name = 'Test Build Spec All Targets'
-type = 'lvBuildSpecAllTargets'
-project = '{lvBuildSpecAllTargets}'
-build_spec = 'SourceDist'
-
-[[build.steps]]
 name = 'Project path'
 type = 'lvBuildSpec'
 project = 'src\lvBuildSpec.lvproj'
 target = 'My Computer'
 build_spec = 'Executable'
+
+[[build.steps]]
+name = 'Test Build Spec All Targets'
+type = 'lvBuildSpecAllTargets'
+project = '{lvBuildSpecAllTargets}'
+build_spec = 'SourceDist'
 
 [[build.steps]]
 name = 'Test Build All'
