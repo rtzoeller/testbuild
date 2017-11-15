@@ -11,6 +11,16 @@ path = 'src\lvBuildSpecAllTargets.lvproj'
 [projects.lvBuildAll]
 path = 'src\lvBuildAll.lvproj'
 
+[projects.lvSetConditionalSymbol]
+path = 'src\lvSetConditionalSymbol.lvproj'
+
+[[codegen.steps]]
+name = 'Set Conditional Disable'
+type = 'lvSetConditionalSymbol'
+project = '{lvSetConditionalSymbol}'
+symbol = 'symbol'
+value = 'set'
+
 [[codegen.steps]]
 name = 'Run VI Codegen Test'
 type = 'lvRunVi'
