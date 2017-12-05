@@ -1,0 +1,48 @@
+[archive]
+build_output_dir = 'Built'
+archive_location = '\\nirvana\temp\dbuck\testbuild'
+
+[projects.lvBuildSpec]
+path = 'src\lvBuildSpec.lvproj'
+
+[projects.lvBuildSpecAllTargets]
+path = 'src\lvBuildSpecAllTargets.lvproj'
+
+[projects.lvBuildAll]
+path = 'src\lvBuildAll.lvproj'
+
+[projects.lvSetConditionalSymbol]
+path = 'src\lvSetConditionalSymbol.lvproj'
+
+[[codegen.steps]]
+name = 'Set Conditional Disable'
+type = 'lvSetConditionalSymbol'
+project = '{lvSetConditionalSymbol}'
+symbol = 'symbol'
+value = 'set'
+
+[[codegen.steps]]
+name = 'Run VI Codegen Test'
+type = 'lvRunVi'
+vi = 'src\helloworld.vi'
+
+[[build.steps]]
+name = 'Test Build Spec'
+type = 'lvBuildSpec'
+project = '{lvBuildSpec}'
+target = 'My Computer'
+build_spec = 'SourceDist'
+
+[[build.steps]]
+name = 'Test Build Spec All Targets'
+type = 'lvBuildSpecAllTargets'
+project = '{lvBuildSpecAllTargets}'
+build_spec = 'SourceDist'
+
+[[build.steps]]
+name = 'Test Build All'
+type = 'lvBuildAll'
+project = '{lvBuildAll}'
+
+[package]
+type = 'nipm'
