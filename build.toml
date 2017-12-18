@@ -46,3 +46,5 @@ project = '{lvBuildAll}'
 
 [package]
 type = 'nipm'
+description = 'NIPKG for the testbuild component. Installs all items built for testbuild.'
+display_name = 'Custom Device Pipeline Test Build'
