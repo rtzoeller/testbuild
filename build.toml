@@ -45,6 +45,12 @@ type = 'lvBuildAll'
 project = '{lvBuildAll}'
 
 [package]
-type = 'nipm'
+type = 'nipkg'
+name = 'testbuild'
+version = '1.0'
+maintainer = 'Donovan Buck (donovan.buck@ni.com)'
 description = 'NIPKG for the testbuild component. Installs all items built for testbuild.'
+homepage = 'www.ni.com'
 display_name = 'Custom Device Pipeline Test Build'
+eula_dependency = 'eula-pkg'
+dependencies = ['pkg1', 'pkg2']
