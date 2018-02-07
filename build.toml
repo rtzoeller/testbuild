@@ -19,7 +19,9 @@ name = 'Set Conditional Disable'
 type = 'lvSetConditionalSymbol'
 project = '{lvSetConditionalSymbol}'
 symbol = 'symbol'
-value = 'set'
+true_value = 'set'
+false_value = 'unset'
+condition = 'lvVersion < 2017'
 
 [[codegen.steps]]
 name = 'Run VI Codegen Test'
