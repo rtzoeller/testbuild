@@ -48,11 +48,5 @@ project = '{lvBuildAll}'
 
 [package]
 type = 'nipkg'
-name = 'testbuild'
-version = '1.0'
-maintainer = 'Donovan Buck (donovan.buck@ni.com)'
-description = 'NIPKG for the testbuild component. Installs all items built for testbuild.'
-homepage = 'www.ni.com'
-display_name = 'Custom Device Pipeline Test Build'
-eula_dependency = 'eula-pkg'
-dependencies = ['pkg1', 'pkg2']
+payload_dir = 'Built'
+install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
