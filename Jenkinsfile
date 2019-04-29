@@ -4,4 +4,6 @@
 
 List<String> lvVersions = ['2016', '2017', '2018']
 
-ni.vsbuild.PipelineExecutor.execute(this, lvVersions)
+List<String> dependencies = ['testbuild-deps']
+
+ni.vsbuild.PipelineExecutor.execute(this, lvVersions, dependencies)
