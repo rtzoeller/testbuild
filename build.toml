@@ -49,4 +49,4 @@ project = '{lvBuildAll}'
 [package]
 type = 'nipkg'
 payload_dir = 'Built'
-install_destination = ''
+install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
