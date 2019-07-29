@@ -1,6 +1,9 @@
 [archive]
 build_output_dir = 'Built'
 archive_location = '\\nirvana\temp\dbuck\testbuild'
+test_tag = [
+  'This is a test for the {veristand_version} tag'
+  ]
 
 [projects.lvBuildSpec]
 path = 'src\lvBuildSpec.lvproj'
