@@ -57,3 +57,8 @@ payload_dir = 'includes'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
 control_file = 'mycontrol_file'
 package_output_dir = 'Built'
+
+[[package]]
+type = 'zip'
+payload_dir = 'src'
+package_output_dir = 'Built'
