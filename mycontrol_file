@@ -1,0 +1,14 @@
+Package: buckd-custom-control-file-testbuild-{veristand_version}-support
+Version: {nipkg_version}
+Architecture: windows_x64
+Maintainer: National Instruments <support@ni.com>
+XB-Plugin: file
+Description: Package installer for the testbuild component.
+ This package installs all items built during the build pipeline of the testbuild component.
+Priority: standard
+Homepage: http://www.ni.com
+XB-LanguageSupport: en
+XB-UserVisible: yes
+Section: Add-Ons
+XB-DisplayVersion: {display_version}
+XB-DisplayName: Custom Device Pipeline Test Build for VeriStand {veristand_version}
