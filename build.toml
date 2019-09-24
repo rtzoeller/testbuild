@@ -7,7 +7,7 @@ type = 'nipkg'
 control_file = 'mycontrol_file'
 package_output_dir = 'Built'
 
-[[package.payload_map]]
+[package.payload_map]
 'includes' = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
 'includes-2' = 'documents\National Instruments\Test\Different Root'
 
